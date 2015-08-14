@@ -6,8 +6,8 @@ sudo apt-get update
 ## Install tmux
 sudo apt-get install tmux
 
-## Install vim
-sudo apt-get install vim
+## Install vim-gnome that comes with clipboard enabled
+sudo apt-get install vim-gnome
 
 ## Add "Open In Terminal" context menu link to Nautilus
 sudo apt-get install nautilus-open-terminal
