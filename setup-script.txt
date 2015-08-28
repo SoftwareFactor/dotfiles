@@ -40,3 +40,7 @@ sudo apt-get install nemo-dropbox
 ## Install Shutter screenshot taking application
 sudo add-apt-repository ppa:shutter/ppa
 sudo apt-get update && sudo apt-get install shutter
+
+# Fix Unity bug that opens new windows not on top
+gconftool-2  --type=Integer --set /apps/compiz-1/general/screen0/options/focus_prevention_level 0
+gconftool-2  --type=Integer --set /org/compiz/profiles/unity/plugins/core/focus_prevention_level 0
