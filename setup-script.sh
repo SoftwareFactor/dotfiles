@@ -3,15 +3,15 @@
 ## Update package definitions
 sudo apt-get update
 
-## Install tmux
-sudo apt-get install tmux
+## Install some commonly used tools
+sudo apt-get install tmux git
 
 ## Install vim-gnome that comes with clipboard enabled
 sudo apt-get install vim-gnome
 
 ## Add "Open In Terminal" context menu link to Nautilus
-sudo apt-get install nautilus-open-terminal
-nautilus -q
+#sudo apt-get install nautilus-open-terminal
+#nautilus -q
 
 ## Install Aspell Lithuanian spell-check dictionary
 sudo apt-get install aspell-lt
@@ -42,8 +42,8 @@ sudo add-apt-repository ppa:shutter/ppa
 sudo apt-get update && sudo apt-get install shutter
 
 # Fix Unity bug that opens new windows not on top
-gconftool-2  --type=Integer --set /apps/compiz-1/general/screen0/options/focus_prevention_level 0
-gconftool-2  --type=Integer --set /org/compiz/profiles/unity/plugins/core/focus_prevention_level 0
+#gconftool-2  --type=Integer --set /apps/compiz-1/general/screen0/options/focus_prevention_level 0
+#gconftool-2  --type=Integer --set /org/compiz/profiles/unity/plugins/core/focus_prevention_level 0
 
 # Installs TLP - Linux advanced power management tool
 sudo add-apt-repository ppa:linrunner/tlp
