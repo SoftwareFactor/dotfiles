@@ -10,3 +10,7 @@ set clipboard=unnamedplus
 
 " Enable autocomplete plugin
 let g:neocomplete#enable_at_startup = 1
+
+" Golang programming
+autocmd FileType go map <buffer> <F5> <Esc>:w<CR>:GoRun<CR>
+autocmd FileType go map <buffer> <F6> <Esc>:w<CR>:GoTest<CR>
