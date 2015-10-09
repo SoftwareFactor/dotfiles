@@ -10,7 +10,13 @@ set clipboard=unnamedplus
 
 " Enable autocomplete plugin
 let g:neocomplete#enable_at_startup = 1
+" Neocomplete configuration that allows to choose suggestion by pressing space
+inoremap <expr><Space> pumvisible() ? neocomplete#close_popup() : "\<Space>"
+" Neocomple setting that enables autoselect of the very first item in the list
+let g:neocomplete#enable_auto_select = 1
 
 " Golang programming
 autocmd FileType go map <buffer> <F5> <Esc>:w<CR>:GoRun<CR>
+autocmd FileType go imap <buffer> <F5> <Esc>:w<CR>:GoRun<CR>
 autocmd FileType go map <buffer> <F6> <Esc>:w<CR>:GoTest<CR>
+autocmd FileType go imap <buffer> <F6> <Esc>:w<CR>:GoTest<CR>
