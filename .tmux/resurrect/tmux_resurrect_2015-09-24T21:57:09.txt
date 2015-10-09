@@ -1,4 +1,0 @@
-pane	golang	0	:vim	1	:*	0	:/home/karolis/playground/go/test	0	vim	:vim ledger.go
-pane	golang	0	:vim	1	:*	1	:/home/karolis/playground/go/test	1	vim	:vim hello.go
-window	golang	0	1	:*	0d06,151x40,0,0{38x40,0,0,0,112x40,39,0,1}
-state	golang	
