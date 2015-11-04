@@ -11,7 +11,7 @@ set clipboard=unnamedplus
 " Enable autocomplete plugin
 let g:neocomplete#enable_at_startup = 1
 " Neocomplete configuration that allows to choose suggestion by pressing space
-inoremap <expr><Space> pumvisible() ? neocomplete#close_popup() : "\<Space>"
+" inoremap <expr><Space> pumvisible() ? neocomplete#close_popup() : "\<Space>"
 " Neocomple setting that enables autoselect of the very first item in the list
 let g:neocomplete#enable_auto_select = 1
 

@@ -16,7 +16,11 @@ switchTask() {
     task +ACTIVE stop
     task $1 start
 }
-alias tlist="task active"
+alias tshow="task active"
+alias twork="task +work -DELEGATED"
+alias tpersonal="task +personal -DELEGATED"
+alias tdelegated="task +DELEGATED"
+alias tduetoday="task duetoday"
 alias tstart=switchTask
 alias tstop="task +ACTIVE stop"
 
