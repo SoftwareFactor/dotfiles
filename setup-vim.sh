@@ -14,3 +14,20 @@ git clone https://github.com/Shougo/neocomplete.vim.git ~/.vim/bundle/neocomplet
 
 # Plugin for fuzzy file search
 git clone https://github.com/kien/ctrlp.vim.git ~/.vim/bundle/ctrlp.vim
+
+# OmniSharp - plugin for C#
+git clone https://github.com/OmniSharp/omnisharp-vim.git
+cd omnisharp-vim
+git submodule update --init --recursive
+cd server
+xbuild
+cd ~/.vim/bundle/omnisharp-vim/omnisharp-roslyn
+./build.sh
+
+# vim-dispatch (required by OmniSharp)
+cd ~/.vim/bundle
+git clone git://github.com/tpope/vim-dispatch.git
+
+# syntastic (required by OmniSharp)
+cd ~/.vim/bundle && \
+git clone https://github.com/scrooloose/syntastic.git
